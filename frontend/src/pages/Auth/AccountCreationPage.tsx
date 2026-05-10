@@ -233,13 +233,21 @@ const AccountCreationPage: React.FC = () => {
           )}
         </button>
       </form>
-      <div className="flex justify-center items-center mt-12 md:mt-8 text-[#9898A1] text-[14px]">
-        Already have an account?&nbsp;
+      <div className="flex flex-col items-center mt-12 md:mt-8 gap-4 text-[14px]">
+        <div className="text-[#9898A1]">
+          Already have an account?&nbsp;
+          <Link
+            to="/login"
+            className="text-[#F2FF53] hover:text-[#f4ffa3] hover:underline font-semibold transition-colors cursor-pointer"
+          >
+            Sign in
+          </Link>
+        </div>
         <Link
-          to="/login"
-          className="text-[#F2FF53] hover:text-[#f4ffa3] hover:underline font-semibold transition-colors cursor-pointer"
+          to="/team"
+          className="text-xs text-[#52525B] hover:text-[#F2FF53] hover:underline transition-colors cursor-pointer"
         >
-          Sign in
+          Meet the Team
         </Link>
       </div>
     </div>

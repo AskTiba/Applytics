@@ -9,6 +9,7 @@ import {
   Sun,
   TrendingUp,
   UserRound,
+  Users,
   X,
 } from "lucide-react";
 import React, { useMemo, useState } from "react";
@@ -271,6 +272,10 @@ function Sidebar({ isDark, setIsDark }: SideBarProps) {
               </>
             )}
           </button>
+          <NavLink to="/team" className={navLinkClass}>
+            <Users size={16} className="mr-3" />
+            Meet the Team
+          </NavLink>
           <NavLink to="/settings" className={navLinkClass}>
             <Settings size={16} className="mr-3" />
             Settings

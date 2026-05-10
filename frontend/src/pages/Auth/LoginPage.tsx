@@ -164,13 +164,21 @@ const LoginPage: React.FC = () => {
         </button>
       </form>
 
-      <div className="flex justify-center items-center mt-12 md:mt-8 text-[#9898A1] text-[14px]">
-        Don't have an account?&nbsp;
+      <div className="flex flex-col items-center mt-12 md:mt-8 gap-4 text-[14px]">
+        <div className="text-[#9898A1]">
+          Don't have an account?&nbsp;
+          <Link
+            to="/register"
+            className="text-[#F2FF53] hover:text-[#f4ffa3] hover:underline font-semibold transition-colors cursor-pointer"
+          >
+            Create one
+          </Link>
+        </div>
         <Link
-          to="/register"
-          className="text-[#F2FF53] hover:text-[#f4ffa3] hover:underline font-semibold transition-colors cursor-pointer"
+          to="/team"
+          className="text-xs text-[#52525B] hover:text-[#F2FF53] hover:underline transition-colors cursor-pointer"
         >
-          Create one
+          Meet the Team
         </Link>
       </div>
     </div>

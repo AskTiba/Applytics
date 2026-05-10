@@ -13,6 +13,7 @@ import Dashboard from './pages/Dashboard';
 import { InsightsPage } from './pages/InsightsPage';
 import Boards from './pages/Boards';
 import SettingsPage from './pages/SettingsPage';
+import TeamPage from './pages/TeamPage';
 
 export default function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -42,6 +43,9 @@ export default function App() {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
         </Route>
+
+        {/* PUBLIC ROUTES */}
+        <Route path="/team" element={<TeamPage />} />
 
         {/* PROTECTED ROUTES */}
         <Route element={<ProtectedRoute />}>
