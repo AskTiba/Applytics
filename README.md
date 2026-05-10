@@ -109,7 +109,7 @@ This comprehensive page details all API functionality in full and includes imple
 
 ## Our Team
 
-Applytics was developed by Team Async Alliance:
+Applytics was developed by Team **Async Alliance** during **Chingu Voyage 60**. Special thanks to [Chingu](https://chingu.io/) for facilitating the team assembly and providing the initial project framework.
 
 - Zuwee Ali (Scrum Master): [GitHub](https://github.com/zuweeali) / [LinkedIn](https://linkedin.com/in/zuwaira-aliyu-mohammed)
 - Afuwape Babatunde (Developer): [GitHub](https://github.com/Afubasic) / [LinkedIn](https://www.linkedin.com/in/afuwape-babatunde/)
