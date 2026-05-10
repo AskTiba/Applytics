@@ -1,41 +1,47 @@
 import React from "react";
-import { ArrowLeft, Users } from "lucide-react";
+import { ArrowLeft, Users, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const teamMembers = [
   {
     name: "Zuwee Aliyu Mohammed",
     role: "Scrum Master",
+    location: "Santa Clarita, California, USA",
     github: "https://github.com/zuweeali",
     linkedin: "https://linkedin.com/in/zuwaira-aliyu-mohammed",
   },
   {
     name: "Greg Minezzi",
     role: "Frontend Developer",
+    location: "Madrid, Spain",
     github: "https://github.com/minezzig",
     linkedin: "https://linkedin.com/in/gregminezzi",
   },
   {
     name: "Ivan Brovko",
     role: "Frontend Developer",
+    location: "Belgrade, Serbia",
     github: "https://github.com/HoneyVanya",
     linkedin: "https://linkedin.com/in/ivan-brovko",
   },
   {
     name: "Anthony Tibamwenda",
     role: "Frontend Developer",
+    location: "Fort Portal, Uganda",
     github: "https://github.com/AskTiba",
     linkedin: "https://www.linkedin.com/in/tibamwenda-anthony-64144820b/",
   },
   {
     name: "Afuwape Babatunde",
     role: "Backend Developer",
+    location: "Lagos, Nigeria",
     github: "https://github.com/Afubasic",
     linkedin: "https://www.linkedin.com/in/afuwape-babatunde/",
   },
   {
     name: "Olivia Prusinowski",
     role: "UI/UX Designer",
+    location: "Grand Rapids, Michigan, USA",
     github: "https://github.com/opruz",
     linkedin: "http://www.linkedin.com/in/olivia-prusinowski-040268160",
   },
@@ -43,10 +49,6 @@ const teamMembers = [
 
 const TeamPage: React.FC = () => {
   const navigate = useNavigate();
-
-  // Project Accent Colors
-  const accentPrimary = "#d6d3ff"; // Lavender from index.css
-  const accentSecondary = "#A5A3D1"; // Muted Purple from index.css (pie-2)
 
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-[#F9FAFB] font-sans text-[#111827] transition-colors duration-300 dark:bg-[#0F0F0F] dark:text-white">
@@ -111,6 +113,10 @@ const TeamPage: React.FC = () => {
                   <p className="text-[10px] font-bold tracking-widest text-[#A5A3D1] uppercase dark:text-[#71717A]">
                     {member.role}
                   </p>
+                  <div className="mt-1.5 flex items-center gap-1 text-[11px] font-medium text-gray-500 transition-colors group-hover:text-gray-700 dark:text-gray-400 dark:group-hover:text-gray-300">
+                    <MapPin size={12} className="text-[#A5A3D1]/70" />
+                    <span className="truncate">{member.location}</span>
+                  </div>
                 </div>
               </div>
 
